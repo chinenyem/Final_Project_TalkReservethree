@@ -1,0 +1,46 @@
+    
+
+ <div class="well">
+
+	<h4 class="leaderheader" >Add Order Reserve</h4>
+		<div>
+			
+
+		</div>
+
+
+	  <form ng-submit="addItem()">
+	  			<select ng-model="newItem.selectedTopic" ng-options="obj.name for obj in sermon" class="inputtextfont"></select>
+				<select ng-model="newItem.selectedGenre" class="inputtextfont" size="5"  id="selectbox">
+					<option class="scroll" ng-repeat="label in sermon[newItem.selectedTopic.id].lesson" >{{label}}</option>
+				</select>
+
+				<hr>
+                <input type="text" class="form-control inputtextfont" ng-model="newItem.name" placeholder="Name">
+                <input type="email" class="form-control inputtextfont" ng-model="newItem.email" placeholder="Email">
+                <input type="text" class="form-control inputtextfont" ng-model="newItem.payment" placeholder="Cash, Check, Credit Card">
+                <input type="text" class="form-control inputtextfont" ng-model="newItem.paid" placeholder="Paid? Yes or No">
+                <input type="number" class="form-control inputtextfont" ng-model="newItem.price" placeholder="Total Cost">
+            		<button type="submit" class="btn btn-default inputtextfont">Add</button>
+       </form>
+</div>
+
+  <div class="well">
+ 		<form>
+
+               <textarea class="form-control" ng-repeat="item in items" rows="8" cols="90">
+               Date Reserved: {{item.date | date: 'M/d/yy h:mm a'}}
+               Product: {{item.selectedGenre}}
+               Member Name:	{{item.name}}
+               Email Address:	{{item.email}}
+               Total Cost: {{item.price | currency}}
+               Payment Type: {{item.payment}}
+               Item Paid for: {{item.paid}}
+                </textarea> 
+               	<button ng-click="removeItem(item)" class="btn btn-default navbar-link inputtextfont">Remove</button>
+               	<button class=" btn btn-default navbar-link inputtextfont"><a href="mailto:chnw1947@gmail.com ">send email</a></button>
+        	</form>
+    </div>
+        
+
+

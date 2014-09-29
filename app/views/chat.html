@@ -1,0 +1,53 @@
+
+<h2>Witness</h2>
+
+
+<form>
+<select ng-model="newMessage.selectedTopic" ng-options="obj.name for obj in sermon"></select>
+		<select ng-model="newMessage.selctedGenre">
+			<option ng-repeat="label in sermon[newMessage.selectedTopic.id].lesson">{{label}}</option>
+		</select>
+
+
+
+
+<input type="date" ng-model="newMessage.day" placeholder="Name">
+<input type="text" ng-model="newMessage.name" placeholder="Name">
+  <input type="email" ng-model="newMessage.email" placeholder="Email">
+  <input type="number" ng-model="newMessage.price" placeholder="Total Cost">
+  <input type="text" ng-model="newMessage.payment" placeholder="CASH, CARD, CHECK">
+  <input type="text" ng-model="newMessage.paid" placeholder="Paid yes or no">
+  <button type="submit" ng-click="addMessage(newMessage);newMessage = {};">ADD</button>
+</form>
+
+
+
+<form ng-repeat="message in messages | reverse">
+<textare id="messages" ng-show="messages.length">
+{{ message.localtime }}
+  <li>Date Reserved: {{message.day}}</li>
+  <li>sermon: {{message.selectedTopic}}</li>
+  <li>Member Name: {{message.name}}</li>
+  <li>Email Address: {{message.email}}</li>
+  <li>Total Cost: {{message.price | currency }}</li>
+  <li>Payment Type: {{message.payment}}</li>
+  <li>Item Paid for: {{message.paid}}</li>
+  <button ng-click=deleteMessage(ref)>delete</button>
+</textarea>
+</form>
+{{messages | json}}
+
+<p class="alert alert-danger" ng-show="err">{{err}}</p>
+
+
+<!-- Date Reserved: {{book.date | date: 'M/d/yy h:mm a'}}
+               Product: {{book.selctedGenre}}
+               Member Name:	{{book.name}}
+               Email Address:	{{book.email}}
+               Total Cost: {{book.price | currency}}
+               Payment Type: {{book.payment}}
+               Item Paid for: {{book.paid}} -->
+
+
+
+
