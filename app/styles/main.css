@@ -318,6 +318,23 @@ h3.leaderheader, h4.leaderheader{
 }
 
 
+.messagesectiondiv{
+background-color: white;
+border-radius: 10px;
+margin-top: 2%; 
+font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+font-size: 14px;
+}
+
+.messagesectiondiv p{
+  margin-left: 2%;
+}
+
+.messagesection{
+ overflow: scroll;
+  width: 695px;
+  height: 300px;
+}
 
 
 /* the list within the sidebar slider*/
