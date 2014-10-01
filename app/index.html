@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -16,8 +17,6 @@
     <!-- Important Owl stylesheet -->
     
     <link rel="stylesheet" href="styles/main.css">
-    <link href='styles/fullcalendar.css' rel='stylesheet' />
-    <link href='styles/fullcalendar.print.css' rel='stylesheet' media='print' />
     <!-- Default Theme -->
     
     <!-- endbuild -->
@@ -28,7 +27,7 @@
     <![endif]-->
 
     <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-     <source src="video/twotrimpraiseteam.mp4" type="video/mp4">
+     <source src="video/Mali Music - Heavy Love.mp4" type="video/mp4">
      <source src="movie.webm" type="video/webm">
           Sorry, your browser does not support HTML5 video.
 </video>
@@ -61,7 +60,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas sidebarblack" id="sidebar" role="navigation">
           <div class="list-group">
             <a ng-href="#" class="list-group-item">Home</a>
-            <a ng-href="#/chat" class="list-group-item">Chat</a> 
+            <a ng-href="#/chat" class="list-group-item">2nd Feature</a> 
             <a ng-href="#/calendar" class="list-group-item">Calendar</a></li>
             <a ng-href="#/orderTwo" class="list-group-item">Reserve Talk</a> 
             <a ng-hide-auth="" href="#/login" class="list-group-item">Log In</a> 
@@ -74,6 +73,7 @@
             <button type="button" class="btn btn-primary btn-xs hidebutton" data-toggle="offcanvas"><i class="fa fa-angle-double-right fa-4x"></i></button>
           </p>
     </div>
+
 
     <!-- Add your site or application content here -->
     <div class="container">
@@ -131,8 +131,13 @@
     <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
     <script src="bower_components/mockfirebase/dist/mockfirebase.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -154,6 +159,7 @@
         <script src="scripts/services/ordertwoSVC.js"></script>
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/gcal.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>

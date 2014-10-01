@@ -1,4 +1,32 @@
+<div class="container cssimages">
 
+<div class="grid">
+<figure class="effect-oscar">
+          <img src="../images/cross.jpg" alt="img08"/>
+          <figcaption>
+            <h2>Chinenyem</h2>
+            <p>Chinenyem roles up her sleeves and goes in for the long haul. You will see her running around with products in her hands, or graciously assisting a visitor.  If you ever need an uplifting smile, go to her.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+</figure>
+<figure class="effect-oscar">
+          <img src="../images/cross.jpg" alt="img08"/>
+          <figcaption>
+            <h2>VENICE</h2>
+            <p>This woman means business! She is the leader of the DEM ministries. Hard copy media such as dvds and cds are created by her. In addition, she loves to give hugs.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+</figure>
+<figure class="effect-oscar">
+          <img src="../images/cross.jpg" alt="img08"/>
+          <figcaption>
+            <h2>Robin</h2>
+            <p>Robin literally makes the world go around. Her level of excellence, integrity, and confidence provides a strong base for the New Life Retail Store and DEM (Dexter Easley Ministries). She creates the standard of processes and implements the steps.</p>
+            <a href="#">View more</a>
+          </figcaption>     
+</figure>
+</div>
+</div>
 <h2>Witness</h2>
 
 
@@ -22,19 +50,27 @@
 
 
 
-<form ng-repeat="message in messages | reverse">
-<textare id="messages" ng-show="messages.length">
+<!-- <form>
+<textarea id="messages" ng-show="messages.length">
 {{ message.localtime }}
+  
+  <button ng-click=messages.$remove(message)>delete</button>
+</textarea> -->
+<div id="messages" ng-show="messages.length">
+<ul ng-repeat="message in messages | reverse" ng-change="messages.$save(message)" ng-model="message.day">
+<!-- <textarea ng-model="message.text" > -->
   <li>Date Reserved: {{message.day}}</li>
-  <li>sermon: {{message.selectedTopic}}</li>
+  <li>sermon: {{message.sermon.lesson.1}}</li>
   <li>Member Name: {{message.name}}</li>
   <li>Email Address: {{message.email}}</li>
   <li>Total Cost: {{message.price | currency }}</li>
   <li>Payment Type: {{message.payment}}</li>
   <li>Item Paid for: {{message.paid}}</li>
-  <button ng-click=deleteMessage(ref)>delete</button>
-</textarea>
-</form>
+  <button ng-click=messages.$remove(message)>delete</button>
+
+</ul>
+
+</div>
 {{messages | json}}
 
 <p class="alert alert-danger" ng-show="err">{{err}}</p>

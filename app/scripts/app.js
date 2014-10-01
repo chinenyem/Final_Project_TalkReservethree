@@ -17,6 +17,8 @@ angular.module('talkreserveApp', [
     'ngTouch',
     'firebase',
     'firebase.utils',
-    'simpleLogin'
+    'simpleLogin',
+    'ui.calendar',
+    'ui.bootstrap'
   ]);
 

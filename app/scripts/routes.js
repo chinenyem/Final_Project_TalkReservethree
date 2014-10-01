@@ -57,7 +57,7 @@ angular.module('talkreserveApp')
   // which should only be available while logged in
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
-      .when('/', {
+      .whenAuthenticated('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -93,7 +93,7 @@ angular.module('talkreserveApp')
         templateUrl: 'views/ordertwo.html',
         controller: 'OrdertwoCtrl'
       })
-      .when('/calendar', {
+       .whenAuthenticated('/calendar', {
         templateUrl: 'views/calendar.html',
         controller: 'GcalCtrl'
       })
