@@ -16,7 +16,7 @@
   //   ];
   // });
 angular.module('talkreserveApp')
-.controller('OrdertwoCtrl', ['$scope', 'ordertwoSVC', function ($scope, ordertwoSVC) {
+.controller('OrdertwoCtrl', ['$scope', 'ordertwoSVC', function ($scope, ordertwoSVC, mandrillSVC ) {
 
 	$scope.selectedTopic = 0;
 	$scope.selectedGenre = null;
@@ -104,8 +104,61 @@ angular.module('talkreserveApp')
     $scope.removeItem = function(id) {
         ordertwoSVC.removeItem(id);
     };
-}]);
 
+
+
+
+
+    /* mandrill trying to make it work*/
+//      $scope.contact_form(function()
+    
+        
+//         $scope.submit =  function(message)
+// 		{
+//         var email = $("#email").val(); // get email field value
+//         var name = $("#name").val(); // get name field value
+//         var msg = $("#msg").val(); // get message field value
+
+//         {
+
+		
+
+//             type: "POST",
+//             url: "https://mandrillapp.com/api/1.0/users/ping.json",
+//             data: {
+//                 'key': 'or4_xbc_JBOIXvkqAXIk9A',
+//                 'message': {
+//                     'from_email': email,
+//                     'from_name': name,
+//                     'headers': {
+//                         'Reply-To': email
+//                     },
+//                     'subject': 'Website Contact Form Submission',
+//                     'text': msg,
+//                     'to': [
+//                     {
+//                         'email': 'chnw1947@gmail.com',
+//                         'name': 'Fun Girl',
+//                         'type': 'to'
+//                     }]
+//                 }
+//             }
+        
+//         $scope.done(function(response) {
+//             alert('Your message has been sent. Thank you!'); // show success message
+//             $("#name").val(''); // reset field after successful submission
+//             $("#email").val(''); // reset field after successful submission
+//             $("#msg").val(''); // reset field after successful submission
+//         })
+//         .fail(function(response) {
+//             alert('Error sending message.');
+//         })
+//         return false; // prevent page refresh
+//     };
+
+
+// });
+}]);
 
 
 

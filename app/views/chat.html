@@ -1,44 +1,55 @@
 
-<h2>VOLUNTEER</h2>
+<h4 class="leaderheader">Search volunteer oppurtunities</h4>
 
 
 
 
-<form class="well">
+
+<form >
 <input class="form-control" type="text" ng-model="search.leader" placeholder="Search leader" >
 <input class="form-control" type="text" ng-model="search.ministry" placeholder="Search ministry">
 <input class="form-control" type="text" ng-model="search.position" placeholder="Search position">
 </form>
 
 
-<div id="messages" ng-show="messages.length" class="well messagesection">
-<section ng-repeat="message in messages |  filter:search:strict | reverse " ng-change="messages.$save(message)" ng-model="message.day" class="messagesectiondiv" >
+
+
+
+
+
+
+<div class="row">
+<div id="messages" ng-show="messages.length" class="well messagesection col-xs-6">
+<h3>Choose a volunteer oppurtunity</h3>
+<section ng-repeat="message in messages |  filter:search:strict | reverse  " ng-change="messages.$save(message)" ng-model="message.day" class="messagesectiondiv" >
   <img src=""/>
   <p>{{message.leader}}</p>
   <p>{{message.ministry}}</p>
   <p>{{message.email}}</p>
   <p>{{message.position}}</p>
   <p>{{message.description}}</p>
-  <input type="checkbox"/> I want this one!
-  <button ng-click=messages.$remove(message)>delete</button>
-  <button ng-click="addVolunteer();volunteer = {};">Add</button>
+  <button ng-click=messages.$remove(message) :true>delete</button>
+  <button ng-click="addVolunteer(message);volunteer = {};">Add</button>
 </section>
 </div>
 
 
 <!-- startbox for volunteer positions wanted --> 
-<div id="volunteer" ng-show="volunteer.length" class="well">
-<section ng-repeat="volunteer in volunteers | reverse">
-  <p>{{volunteer.message.leader}}</p>
-  <p>{{volunteer.message.ministry}}</p>
-  <p>{{volunteer.message.email}}</p>
-  <p>{{volunteer.message.position}}</p>
-  <p>{{volunteer.message.description}}</p>
-  
+<div id="volunteer" ng-show="volunteers.length" class="well col-xs-6">
+<h3>I will volunteer with...</h3>
+<section ng-repeat="volunteer in volunteers | reverse " ng-model="volunteer.day">
+  <p>{{volunteer.leader}}</p>
+  <p>{{volunteer.ministry}}</p>
+  <p>{{volunteer.email}}</p>
+  <p>{{volunteer.position}}</p>
+  <p>{{volunteer.description}}</p>
+  <button ng-click=volunteers.$remove(volunteer) :true>delete</button>
 </section>
+</div>
 </div>
 
 <form class="well">
+<h3> Ministry Leader add volunteer oppurtunity here</h3>
 <input type="text" ng-model="newMessage.leader" placeholder="Ministry Leader">
 <input type="text" ng-model="newMessage.ministry" placeholder="Ministry">
   <input type="email" ng-model="newMessage.email" placeholder="Email">
@@ -52,7 +63,6 @@
 
 
 <p class="alert alert-danger" ng-show="err">{{err}}</p>
-
 
 
 

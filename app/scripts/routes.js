@@ -61,17 +61,10 @@ angular.module('talkreserveApp')
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
-
-      .when('/chat', {
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl'
-      })
-
       .whenAuthenticated('/account', {
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
@@ -80,14 +73,6 @@ angular.module('talkreserveApp')
       .whenAuthenticated('/chat', {
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
-      })
-      .when('/orderroute', {
-        templateUrl: 'views/order.html',
-        controller: 'OrderrouteCtrl'
-      })
-      .when('/firebaseexample', {
-        templateUrl: 'views/firebaseexample.html',
-        controller: 'FirebaseexampleCtrl'
       })
       .whenAuthenticated('/orderTwo', {
         templateUrl: 'views/ordertwo.html',

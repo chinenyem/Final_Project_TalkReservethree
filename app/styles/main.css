@@ -16,6 +16,13 @@
 
 
 
+
+
+/*.thirdcontainer{
+  min-width: 851px;
+  min-height: 914px;
+}*/
+
 .calAlert{
   width: 595px; float: right; margin-bottom: 5px;
 }
@@ -43,6 +50,8 @@
 }
 
 .grid {
+  margin-top: 6%;
+ margin-left: -6%;
   overflow: hidden;
   margin: 0;
   padding: 3em 0 0 0;
@@ -131,6 +140,18 @@
   background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
 }*/
 
+.oscarone{
+  margin-left: -6%;
+}
+
+.oscartwo{
+  margin-left: 14px;
+}
+
+.oscarthree{
+  margin-left: 2%;
+}
+
 figure.effect-oscar img {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
@@ -192,10 +213,10 @@ figure.effect-oscar:hover img {
 }
 
 
-.container.cssimages{
-margin-top: -12%;
-margin-left: -26%;
-margin: -8%;
+.cssimages{
+margin-left: -19%;
+margin-right: -9%;
+margin-top: 11%;
 width: 925px;
 display: inline-table;
 }
@@ -258,7 +279,7 @@ display: inline-table;
  }
 
 .form-control{
-  font-size: 20px;
+  font-size: 19px;
   height: 50px;
   border: none;
 }
@@ -275,6 +296,14 @@ display: inline-table;
   background-color: rgba(114, 139, 141, .9);
   border: none;
 }  
+
+
+select {
+  font-size: 20px;
+  background-color: rgb(114, 139, 141);
+  font-family: 'PT Sans', sans-serif;
+  font-color: white;
+}
 
 
 .inputtextfont{
@@ -324,6 +353,7 @@ border-radius: 10px;
 margin-top: 2%; 
 font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 font-size: 14px;
+color:black;
 }
 
 .messagesectiondiv p{
@@ -332,8 +362,7 @@ font-size: 14px;
 
 .messagesection{
  overflow: scroll;
-  width: 695px;
-  height: 300px;
+  
 }
 
 
@@ -370,10 +399,27 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
-  background-color: rgb(112, 123, 124);
+  background-color: black;
+  color:white;
 }
 
+.calendarbutton{
+  height: 38px;
+  width: 89px;
+  margin-top: -1%;
+  margin-left: 30px;
+}
 
+.calendarbuttontwo{
+  height: 38px;
+  width: 89px;
+  margin-top: -1%;
+  width: 226px;
+  color: white;
+  background-color: rgba(48, 178, 177, 0.4);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+}
 
  .btn-primary{
 margin-left: -22%;
@@ -392,7 +438,11 @@ border-radius: 10px;
 }
 
 
-
+.btn-primary:hover{
+  color: #fff;
+  background-color: rgba(48, 178, 177, 0.4); 
+  border-color: rgba(48, 178, 177, 0.4); 
+}
 
 
 #videobcg { 

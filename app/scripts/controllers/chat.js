@@ -18,6 +18,7 @@ angular.module('talkreserveApp')
   
 
     $scope.messages = fbutil.syncArray('messages', {limit: 20});
+    $scope.volunteers = fbutil.syncArray('volunteers', {limit: 20});
 
 
     // provide a method for adding a message
@@ -25,7 +26,7 @@ angular.module('talkreserveApp')
         
         //push a message to the end of the array
         $scope.messages.$add({
-          leader: newMessage.leader.volunteer,
+          leader: newMessage.leader,
           ministry: newMessage.ministry, 
           email: newMessage.email,
           position: newMessage.position,
@@ -36,16 +37,9 @@ angular.module('talkreserveApp')
     };
 
 
-
- $scope.addVolunteer = function(volunteer){
-    $scope.volunteers.$add({
-          leader: volunteer.message,
-          ministry: volunteer.message.ministry, 
-          email: volunteer.message.email,
-          position: volunteer.message.position,
-          description: volunteer.message.description
-
-    })
+//push volunteer to end of array
+ $scope.addVolunteer = function(message){
+    $scope.volunteers.$add(message);
    };
 
 
@@ -56,6 +50,11 @@ angular.module('talkreserveApp')
       $scope.messages.$remove(index, 1);
     }
 
+
+$scope.deleteMessage = function(index){
+      $scope.messages = fbutil.syncArray('messages');
+      $scope.messages.$remove(index, 1);
+    }
 
  });
 

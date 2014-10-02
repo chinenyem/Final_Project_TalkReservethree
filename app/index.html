@@ -86,7 +86,7 @@
       <div class="firstcontainer">
       </div>
 
-      <div ng-view="" class="thirdcontainer">
+      <div ng-view="">
         
       </div>
 
@@ -140,6 +140,9 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <script src="bower_components/fullcalendar/dist/gcal.js"></script>
+
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
@@ -153,12 +156,12 @@
         <script src="scripts/directives/ngShowAuth.js"></script>
         <script src="scripts/directives/ngHideAuth.js"></script>
         <script src="scripts/routes.js"></script>
-        <script src="scripts/controllers/order.js"></script>
+        <script src="scripts/controllers/mandrill.js"></script>
         <script src="scripts/controllers/ordertwo.js"></script>
+        <script src="scripts/services/mandrillSVC.js"></script>
         <script src="scripts/services/ordertwoSVC.js"></script>
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/gcal.js"></script>
-
         <!-- endbuild -->
 </body>
 </html>
