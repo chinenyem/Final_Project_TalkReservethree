@@ -82,6 +82,10 @@ angular.module('talkreserveApp')
         templateUrl: 'views/calendar.html',
         controller: 'GcalCtrl'
       })
+      .whenAuthenticated('/inventory', {
+        templateUrl: 'views/inventory.html',
+        controller: 'inventoryCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 

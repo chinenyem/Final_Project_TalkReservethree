@@ -32,7 +32,49 @@
           Sorry, your browser does not support HTML5 video.
 </video>
 
-    <div class="navbar navbar-inverse ">
+
+<header class="cd-header">
+    <nav>
+      <ul class="cd-secondary-nav">
+        <li><img src="../images/LOGO1.png" alt="Logo"></li>
+        <li><a ng-hide-auth="" href="#/login">Log In</a></li>
+        <li><a ng-show-auth="" href="#/account">Account</a></li>
+      </ul>
+    </nav> <!-- cd-nav -->
+
+    <a class="cd-primary-nav-trigger" href="#0">
+      <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+    </a> <!-- cd-primary-nav-trigger -->
+  </header>
+
+  <nav>
+    <ul class="cd-primary-nav">
+        <li><a ng-href="#" class="afontsize">Home</a></li>
+
+
+      <li class="cd-label">Process Order</li>
+
+        <li><a ng-href="#/orderTwo" class="afontsize">Reserve Talk</a></li>
+
+      <li class="cd-label">Be a Volunteer</li>
+
+        <li><a ng-href="#/chat" class="afontsize">Volunteer</a></li>
+
+      <li class="cd-label">Schedule</li>
+
+        <li><a ng-href="#/calendar" class="afontsize">Calendar</a></li>
+
+      <li class="cd-label">Follow New Life</li>
+      
+      <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+      <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+      <li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+      <li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+    </ul>
+  </nav>
+
+
+<!-- <div class="navbar navbar-inverse ">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,49 +86,41 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav hidebar">
-        <li><a ng-href="#">Home</a></li>
-        <li><a ng-href="#/orderTwo">Reserve Talk</a></li>
-        <li><a ng-href="#/chat">Volunteer</a></li>
-        <li><a ng-href="#/calendar">Caledar</a></li>
-        <li><a ng-hide-auth="" href="#/login">Log In</a></li>
-        <li><a ng-show-auth="" href="#/account">Account</a></li>
+        
       </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-  </div>
+    </div><!/.nav-collapse -->
+  <!-- </div>
+</div>
 
   <div class="container-fluid ">
       <div class="row row-offcanvas row-offcanvas-left">
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas sidebarblack" id="sidebar" role="navigation">
           <div class="list-group">
-            <a ng-href="#" class="list-group-item">Home</a>
-            <a ng-href="#/chat" class="list-group-item">Volunteer</a> 
-            <a ng-href="#/calendar" class="list-group-item">Calendar</a></li>
-            <a ng-href="#/orderTwo" class="list-group-item">Reserve Talk</a> 
-            <a ng-hide-auth="" href="#/login" class="list-group-item">Log In</a> 
+          <a ng-hide-auth="" href="#/login" class="list-group-item">Log In</a>
+          <a ng-href="#" class="list-group-item">Home</a>
             <a ng-show-auth="" href="#/account" class="list-group-item">Account</a>
-           
+            <a ng-href="#/inventory" class="list-group-item">Inventory</a></li> 
+            <a ng-href="#/orderTwo" class="list-group-item">Reserve Talk</a> 
+            <a ng-href="#/chat" class="list-group-item">Volunteer</a>
+             <a ng-href="#/calendar" class="list-group-item">Calendar</a></li> 
           </div>
-        </div><!--/span-->
-        <div class="col-xs-12 col-sm-9 content">
+        </div><!/span-->
+        <!-- <div class="col-xs-12 col-sm-9 content">
           <p class="pull-left">
             <button type="button" class="btn btn-primary btn-xs hidebutton" data-toggle="offcanvas"><i class="fa fa-angle-double-right fa-4x"></i></button>
           </p>
-    </div>
+        </div> -->
+      
 
 
     <!-- Add your site or application content here -->
     <div class="container">
-  
-      <div class="header">
-        <h3 class="text-muted"><img ng-src="../images/LOGO1.png"/></h3>
-      </div>
 
       <div class="firstcontainer">
       </div>
 
-      <div ng-view="">
+      <div ng-view="" class="snipsviews">
         
       </div>
 
@@ -162,6 +196,7 @@
         <script src="scripts/services/ordertwoSVC.js"></script>
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/gcal.js"></script>
+        <script src="scripts/controllers/inventory.js"></script>
         <!-- endbuild -->
 </body>
 </html>

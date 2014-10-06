@@ -111,13 +111,13 @@ angular.module('talkreserveApp')
 
     /* mandrill trying to make it work*/
 //      $scope.contact_form(function()
-    
+    	// var email = $("#email").val(); // get email field value
+//         var name = $("#name").val(); // get name field value
+//         var msg = $("#msg").val(); // get message field value
         
 //         $scope.submit =  function(message)
 // 		{
-//         var email = $("#email").val(); // get email field value
-//         var name = $("#name").val(); // get name field value
-//         var msg = $("#msg").val(); // get message field value
+//         
 
 //         {
 
