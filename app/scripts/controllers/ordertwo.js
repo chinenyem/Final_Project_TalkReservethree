@@ -18,13 +18,18 @@
 angular.module('talkreserveApp')
 .controller('OrdertwoCtrl', ['$scope', 'ordertwoSVC', function ($scope, ordertwoSVC, mandrillSVC ) {
 
+
+
 	$scope.selectedTopic = 0;
+	$scope.selectedMonth = 0;
 	$scope.selectedGenre = null;
 	$scope.sermon = [
 		{
+
 			id: 0,
+			month: 'January 2014',
 			name: 'Spritual Empowerment',
-			lesson: [
+			lesson: [ 
 				'The Joy & Responsibility of Stewardship  1/3/2010 10AMa',
 				'The Joy & Responsibility of Stewardship  1/3/2010 10AMb',
 				'The Joy & Responsibility of Stewardship  1/3/2010 10AMc',
@@ -39,6 +44,7 @@ angular.module('talkreserveApp')
 		},
 		{
 			id: 1,
+			month: 'Febuary 2014',
 			name: 'Family Empowerment',
 			lesson: [
 				'The Potential for Your Family household 10/5/2010 7PMa',
@@ -54,6 +60,7 @@ angular.module('talkreserveApp')
 		},
 		{
 			id: 2,
+			month: 'March 2014',
 			name: 'Finances',
 			lesson: [
 				'Having Faith In God\'s Covenant Blessing 12/16/2008 7:30PMa',
@@ -69,6 +76,7 @@ angular.module('talkreserveApp')
 		},
 		{
 			id: 3,
+			month: 'April 2014',
 			name: 'Marriage',
 			lesson: [
 				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
@@ -81,7 +89,136 @@ angular.module('talkreserveApp')
 				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
 			],
 			live: true
-		}
+		},
+
+		{
+			id: 3,
+			month: 'May 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'June 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'July 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'August 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'September 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'November 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'October 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
+		{
+			id: 3,
+			month: 'December 2014',
+			name: 'Marriage',
+			lesson: [
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009a',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009b',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009c',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009d',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009e',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009f',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009g',
+				'Marriage Conference 2009 Lady Leisa Easley 11/14/2009h'
+			],
+			live: true
+		},
 	];
 
 

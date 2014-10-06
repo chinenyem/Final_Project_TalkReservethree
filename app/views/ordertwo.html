@@ -7,12 +7,17 @@
 
 		</div>
 
+<form>
+<input class="form-control" type="text" ng-model="search.month" placeholder="Search by Month and Year" >
+</form>
 
 	  <form ng-submit="addItem()">
-	  			<select ng-model="newItem.selectedTopic" ng-options="obj.name for obj in sermon" class="inputtextfont"></select>
-				<select ng-model="newItem.selectedGenre" size="1"  id="selectbox">
+	  			<select ng-model="newItem.selectedTopic" ng-options="obj.month for obj in sermon |  filter:search:strict" class="inputtextfont" size="2"></select>
+				<select ng-model="newItem.selectedGenre" size="2"  id="selectbox">
 					<option class="scroll" ng-repeat="label in sermon[newItem.selectedTopic.id].lesson" >{{label}}</option>
 				</select>
+       
+
 
 				<hr>
                 <input type="text" class="form-control inputtextfont" ng-model="newItem.name" placeholder="Name">

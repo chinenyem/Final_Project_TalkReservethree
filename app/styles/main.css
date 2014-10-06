@@ -15,15 +15,16 @@
 }
 
 
-.snipsviews{
-margin-top: 30%;
+
+.item img{
+  width: 100%;
 }
 
+.snipsviews{
+margin-top: 30%;
+width: 100%;
+}
 
-/*.thirdcontainer{
-  min-width: 851px;
-  min-height: 914px;
-}*/
 
 .calAlert{
   width: 595px; float: right; margin-bottom: 5px;
@@ -337,19 +338,24 @@ select {
   width: 182px;
   height: 150px;
   border-radius: 50%;
-  margin-top: 5%;
+  margin-top: 6%;
+  text-align: center;
  
 }
 
 
-.staffleaders {
-  font-family: 'PT Sans', sans-serif;
-  color: white;
-  background-color: rgba(48, 178, 177, 0.4);
-  margin-top: 0;
-  height: 450px;
-  text-align: center;
+ h4.headtitle {
+text-align: center;
+margin-top: 13%;
+}
 
+p.staffcaption{
+text-align: center;
+margin-top: 1%;
+}
+
+div.staffleaders {
+  margin-top: 29%;
 }
 
 h3.leaderheader, h4.leaderheader{
@@ -412,34 +418,6 @@ margin-left: 2%;
   
 }
 
-/* the list within the sidebar slider*/
-.list-group-item {
-  background-color: transparent; 
-  border: none;
-}
-
-.list-group{
-margin-left: 8%;
-}
-
-.list-group-item{
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 3.428571;
-  font-color: white;
-}
-
-a.list-group-item {
-color: white;
-}
-
-a.list-group-item:hover{
-  text-decoration: underline;
-  background-color: transparent;
-  color: white;
-}
-
 
 body {
   padding-top: 20px;
@@ -488,11 +466,7 @@ height: 102px;
 width: 66px;
 }
 
-.sidebarblack { 
-background-color: rgba(48, 178, 177, 0.4);
-height: 102.2%;
-border-radius: 10px;
-}
+
 
 
 .btn-primary:hover{
@@ -706,14 +680,7 @@ margin-top: -9%;
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
+
 
 /* Supporting marketing content */
 .marketing {
@@ -741,10 +708,7 @@ margin-top: -9%;
   .header {
     margin-bottom: 30px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+  
 }
 
 
