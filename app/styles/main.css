@@ -14,6 +14,9 @@
     url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
 
+.volunteerchoice{
+  margin-left: -16px;
+}
 
 .rowinfo{
   margin-top: 7%;
@@ -451,7 +454,8 @@ color:black;
 .volunteerheaderthree{
  text-align: center;
  width: 44%;
- margin-left: 4%; 
+ margin-left: 4%;
+ height: 117px; 
 }
 
 .volunteerheadertwo{
@@ -461,7 +465,7 @@ color:black;
  height: 119px;
 }
 .rowvolunteer{
-margin-left: 2%;
+margin-left: 0%;
 }
 
 .inputcolor{
@@ -475,6 +479,20 @@ margin-left: 2%;
   margin-left: 2%;
   color:black;
   
+}
+
+.twittercalendar{
+  margin-top: 13%
+}
+
+.volunteerrowone{
+height: 500px;
+overflow:scroll;
+}
+
+.volunteerrowtwo{
+  height: 500px;
+  overflow:scroll;
 }
 
 
