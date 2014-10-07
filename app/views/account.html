@@ -44,7 +44,7 @@
     <input type="password" ng-keypress="clear()" ng-model="confirm" class="form-control" />
   </p>
 
-  <button class="btn btn-primary" ng-click="changePassword(oldpass, newpass, confirm)">change password</button>
+  <button class="btn-default" ng-click="changePassword(oldpass, newpass, confirm)">change password</button>
 
   <p class="error" ng-show="err">{{err}}</p>
   <p class="good" ng-show="msg">{{msg}}</p>
@@ -65,7 +65,7 @@
     <input type="password" ng-keypress="clear()" ng-model="pass" class="form-control" />
   </p>
 
-  <button class="btn btn-primary" ng-click="changeEmail(pass, newEmail)">update email</button>
+  <button class="btn-default" ng-click="changeEmail(pass, newEmail)">update email</button>
 </form>
 </div>
 

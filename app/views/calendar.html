@@ -1,7 +1,8 @@
-<div role="main">
-    <div class="container">
-        <section id="directives-calendar" ng-controller="GcalCtrl">
-            
+
+
+ 
+   <div class="col-xs-10">
+      <section id="directives-calendar" ng-controller="GcalCtrl">  
            <div class="well calendarwell">
                 <div class="row-fluid">
                     <div class="span4">
@@ -9,10 +10,7 @@
                           <button class="btn  calendarbuttontwo" ng-click="addRemoveEventSource(eventSources,eventSource)">
                             View only Church Events
                           </button>
-                          <!-- <button type="button" class="btn  calendarbutton" ng-click="addEvent()">
-                            Add Event
-                          </button>
-                          <button type="button" class="btn" ng-click="remove()">Remove Event</button> -->
+                          
                         </div>
 
                         <ul class="unstyled">
@@ -25,30 +23,34 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="span8">
-                        <tabset>
-                            
-                           
-                              <div class="alert-success calAlert" ng-show="alertMessage != undefined && alertMessage != ''">
+                    </div>
+                    <div class="alert-success calAlert" ng-show="alertMessage != undefined && alertMessage != ''">
                                 <h4>{{alertMessage}}</h4>
                               </div>
-                              <div class="btn-toolbar">
-                                
-                      
-                              </div>
-                            <div class="calendar" ng-model="eventSources" calendar="myCalendar2" config="uiConfig.calendar" ui-calendar="uiConfig.calendar">
+                              
+                            <div class="calendar well" ng-model="eventSources" calendar="myCalendar2" config="uiConfig.calendar" ui-calendar="uiConfig.calendar">
                           <!--    my calendar appears here -->
                             </div>
-                           </tab>
-                           
-                        </tabset>
-                    </div>
                 </div>
-            </div>
-            
-            </div>
-        </section>
-
+          </section>
+      </div>
+    <div class="col-xs-2">
+    <a class="twitter-timeline" href="https://twitter.com/DrDexterEasley" data-widget-id="519217496314753024">Tweets by @DrDexterEasley</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
+
+<div class="col-xs-6"
+<div id="upto-calendar-container-IvOO" class="upto-calendar-plugin upto-wrapper"><script>!function(c,b,a){function d(h){var e=document.getElementById("upto-calendar-container-"+c),f=document.createElement("SCRIPT"),g=" http://upto.com/js/plugin.js";f.onreadystatechange=function(){if(f.readyState==="loaded"||f.readyState==="complete"){f.onreadystatechange=null;h()}};f.onload=function(){h()};f.setAttribute("src",g);e.parentNode.insertBefore(f,e)}d(function(){upto.init(c)})}("IvOO");</script></div>
 </div>
+
+                              
+                         
+
+
+
+
+
+
+
+
+
