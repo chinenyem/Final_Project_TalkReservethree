@@ -1,4 +1,10 @@
 
+<div class="row">
+<div class="col-xs-12">
+<img src="../images/crosstwo copy.png" class="crosstwo"/>
+</div>
+</div>
+
  <div class="well">
 
 	<h4 class="leaderheader" >Add Order Reserve</h4>
@@ -24,7 +30,8 @@
                 <input type="email" class="form-control inputtextfont" ng-model="newItem.email" placeholder="Email">
                 <input type="text" class="form-control inputtextfont" ng-model="newItem.payment" placeholder="Cash, Check, Credit Card">
                 <input type="text" class="form-control inputtextfont" ng-model="newItem.paid" placeholder="Paid? Yes or No">
-                <input type="number" class="form-control inputtextfont" ng-model="newItem.price" placeholder="Total Cost">
+                <input type="tel" class="form-control inputtextfont" ng-model="newItem.phone" placeholder="Phone Number">
+                <input type="number" class="form-control inputtextfont" ng-model="newItem.price" placeholder="If applicable total balance">
             		<button type="submit" class="btn btn-default inputtextfont">Add</button>
        </form>
 </div>
@@ -35,8 +42,9 @@
                <textarea class="form-control" ng-repeat="item in items" rows="8" cols="90" >
                Date Reserved: {{item.date | date: 'M/d/yy h:mm a'}}
                Product:  {{item.selectedGenre}}
-               Member Name: 	{{item.name}}
+               Client Name: 	{{item.name}}
                Email Address: 	{{item.email}}
+               Phone Number: {{item.phone}}
                Total Cost:  {{item.price | currency}}
                Payment Type:  {{item.payment}}
                Item Paid for:  {{item.paid}}

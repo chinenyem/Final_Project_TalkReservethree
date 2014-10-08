@@ -1747,14 +1747,14 @@ angular.module('talkreserveApp')
 
 	
 
-    $scope.newItem = { name: '', email: '', payment: '', paid:'', selectedGenre:'', price:'', date: new Date()};
+    $scope.newItem = { name: '', email: '', payment: '', paid:'', selectedGenre:'', price:'', phone:'', date: new Date()};
     $scope.currentItem = null;
 
     $scope.items = ordertwoSVC.getItems();
 
     $scope.addItem = function () {
         ordertwoSVC.addItem(angular.copy($scope.newItem));
-        $scope.newItem = { name: '', email: '', payment:'', paid:'', selectedGenre:'', price:'', date: new Date()};
+        $scope.newItem = { name: '', email: '', payment:'', paid:'', selectedGenre:'', price:'', phone:'', date: new Date()};
     };
 
     $scope.updateItem = function (id) {
