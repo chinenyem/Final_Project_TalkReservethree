@@ -1736,11 +1736,43 @@ angular.module('talkreserveApp')
 				"8/3/14 , 10AM , Grace For The Family (Core Belief System) ",
 				"8/12/14 , 7pm , Setting Boundaries With Yourself",
 				"8/17/14 , 10AM , How To Restore Your Family Member",
-				"8/18/14 , 7pm , How To Restore Your Family Member"
+				"8/18/14 , 7pm , How To Restore Your Family Member",
+				"8/24/2014 , 8am , Teaching Christian Values to Your children",
+				"8/24/2014 , 10am , Teaching Christian Values to Your children",
+				"8/26/2014 , 8am , Teaching Christian Values to Your children PT II",
+				"8/31/2014 , 10AM , Walking in Forgiveness with Family Members",
+				"8/31/2014 , 8AM , Walking in Forgiveness with Family Members"
+
 
 			],
 			live: true
-		}
+		},
+		{
+			id: 80,
+			month: 'September 2014',
+			name: 'Marriage',
+			lesson: [
+				"9/7/2014 , 8AM , Understanding the Gospel of Grace",
+				"9/7/2014 , 10AM , Understanding the Gospel of Grace",
+				"9/14/2014 , 10AM , Understanding the Gospel of Grace PII",
+				"9/14/2014 , 8AM , Understanding the Gospel of Grace PII",
+				"9/21/2014 , 8AM , Understanding the Gospel of Grace \'Living by Faith and Not by the Law\'",
+				"9/26/2014 , 7PM , 30 Day Church Challenge qith Phil Munsey",
+				"9/27/2014 , 10AM , 31 Day Church Challenge qith Phil Munsey",
+				"9/28/2014 , 8AM , Understanding the Gospel of Grace \'Freedom from Bondage\'"
+			],
+			live: true
+		},
+		{
+			id: 81,
+			month: 'October 2014',
+			name: 'Marriage',
+			lesson: [
+				"10/5/2014 , 8AM , Understanding the Gospel of Grace PT II",
+				"10/6/2014 , 10AM , Understanding the Gospel of Grace PT II"
+			],
+			live: true
+		},
 		
 	];
 
