@@ -1,7 +1,7 @@
 
 <div class="row">
 <div class="col-xs-12">
-<img src="../images/crosstwo copy.png" class="crosstwo"/>
+<img src="../images/crosstwocopy.png" class="crosstwo"/>
 </div>
 </div>
 
@@ -15,12 +15,17 @@
 
 <form>
 <input class="form-control" type="text" ng-model="search.month" placeholder="Search by Month and Year" >
+<input class="form-control" type="text" ng-model="search.lesson" placeholder="Search by Topic" >
 </form>
 
 	  <form ng-submit="addItem()">
+
 	  			<select ng-model="newItem.selectedTopic" ng-options="obj.month for obj in sermon |  filter:search:strict" class="inputtextfont" size="2"></select>
+
 				<select ng-model="newItem.selectedGenre" size="2"  id="selectbox">
 					<option class="scroll" ng-repeat="label in sermon[newItem.selectedTopic.id].lesson" >{{label}}</option>
+
+
 				</select>
        
 
