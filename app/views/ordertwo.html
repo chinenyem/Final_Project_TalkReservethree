@@ -1,13 +1,13 @@
 
 <div class="row">
 <div class="col-xs-12">
-<img src="../images/crosstwocopy.png" class="crosstwo"/>
+<img src="/images/crosscreate.png" class="crosstwo"/>
 </div>
 </div>
 
  <div class="well">
 
-	<h4 class="leaderheader" >Add Order Reserve</h4>
+	<h4 class="leaderheader">Add Order Reserve</h4>
 		<div>
 			
 
@@ -15,7 +15,7 @@
 
 <form>
 <input class="form-control" type="text" ng-model="search.month" placeholder="Search by Month and Year" >
-<input class="form-control" type="text" ng-model="search.lesson" placeholder="Search by Topic" >
+<input class="form-control" type="text" ng-model="search.lesson" placeholder="Search by Topic">
 </form>
 
 	  <form ng-submit="addItem()">
@@ -55,9 +55,12 @@
                Item Paid for:  {{item.paid}}
                 </textarea> 
                	<button ng-click="removeItem(item)" class="btn btn-default navbar-link inputtextfont">Remove</button>
-               	<button class=" btn btn-default navbar-link inputtextfont"><a href="mailto:chnw1947@gmail.com?cc=newlife.robinb14@yahoo.com&subject=Talkreserve">send email</a></button>
+               	<button class=" btn btn-default navbar-link inputtextfont">
+                <a href="mailto:chnw1947@gmail.com?cc=newlife.robinb14@yahoo.com&subject=Talkreserve&Big%20News&body=DateReserved:{{item.date}} Product:{{item.selectedGenre}} Client Name:{{item.name}} EmailAddress:{{item.email}} Phone Number: {{item.phone}} TotalCost:{{item.price|currency}} PaymentType:{{item.payment}} Item Paid for:{{item.paid}}">send email</a>
+                </button>
         	</form>
     </div>
+
 
 
 

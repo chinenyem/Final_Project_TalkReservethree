@@ -1,6 +1,6 @@
 /* Space out content a bit */
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 
 @font-face {
@@ -29,7 +29,9 @@
 }
 
 
-
+.upto{
+  visibility: hidden;
+}
 
 .carousel-inner {
 position: relative;
@@ -687,24 +689,57 @@ border-style: none;
   }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 640px) {
+  
+
+.form-control {
+font-size: 19px;
+height: 50px;
+border: solid;
+}
+
+
+.inputtextfontheader{
+  color: black;
+}
+
+.upto{
+  /*visibility: visible;*/
+  width: 100%;
+  height: 100;
+}
+
+.googlecal{
+width: 100%;
+}
+
+
+.calendarwell {
+ margin-top: 0%; 
+ margin-left: 0%; 
+ width: 100%;
+}
+
+  body{
+    background-color: white;
+  }
+
   .hidebutton{
   visibility: hidden;
   }
 
-#videobcg { 
-     position: absolute;
-     top: 0px;
-     left: 0px;
-     min-width: 100%;
-     min-height:100%;
-     width: auto;
-     height: auto;
-     z-index: -1000;
-     overflow: hidden;
-     background-size: cover;
+#videobcg{ 
+     display: none;
 }
 
+.crosstwo{
+  display:none;
+}
+
+.snipsviews{
+  width: 100%;
+  height: 100%;
+}
 
 
 

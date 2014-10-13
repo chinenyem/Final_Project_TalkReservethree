@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -13,7 +14,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <!-- Important Owl stylesheet -->
     
     <link rel="stylesheet" href="styles/main.css">
@@ -27,7 +28,7 @@
     <![endif]-->
 
     <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-     <source src="video/Mali Music - Heavy Love.mp4" type="video/mp4">
+     <source src="images/MaliMusicHeavyLove.mp4" type="video/mp4">
      <source src="movie.webm" type="video/webm">
           Sorry, your browser does not support HTML5 video.
 </video>
@@ -49,6 +50,8 @@
 
   <nav>
     <ul class="cd-primary-nav">
+
+        <li><a ng-show-auth="" href="#/account"  class="afontsize" >Account</a></li>
         <li><a ng-href="#" class="afontsize">Home</a></li>
 
 
@@ -127,9 +130,12 @@
     <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
+    <script src="bower_components/fullcalendar/dist/gcal.js"></script>
     <!-- endbuild -->
 
-    <script src="bower_components/fullcalendar/dist/gcal.js"></script>
+
+
+    
 
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
